@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tayaba — Web Developer &amp; Video Editor | Portfolio</title>
+  <meta name="description" content="Portfolio of Tayaba — remote web developer and video editor. Custom websites, WordPress builds, database-driven backends, and polished video edits.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark">TY</span>
+        <span class="logo__text">Tayaba<span class="logo__dot">.</span>dev</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="site-nav__cta">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Visually hidden H1 for SEO / accessibility (carousel slides use H2) -->
+    <h1 class="visually-hidden">Tayaba — Remote Web Developer &amp; Video Editor. Featured projects and services.</h1>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section
+      class="hero"
+      id="hero"
+      aria-roledescription="carousel"
+      aria-label="Featured projects and services"
+      tabindex="0"
+    >
+      <div class="hero__track" id="heroTrack">
+        <!-- Slides injected dynamically by js/script.js using data/slides-data.js -->
+      </div>
+
+      <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5 L8 12 L15 19" /></svg>
+      </button>
+      <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5 L16 12 L9 19" /></svg>
+      </button>
+
+      <!-- Signature element: a video-editor style timeline scrubber that
+           doubles as the autoplay progress indicator and slide picker -->
+      <div class="hero__timeline" role="group" aria-label="Slide timeline">
+        <div class="hero__timeline-track">
+          <div class="hero__progress" id="heroProgress"></div>
+        </div>
+        <div class="hero__ticks" id="heroTicks">
+          <!-- Tick buttons injected dynamically -->
+        </div>
+      </div>
+
+      <!-- Live region announcing slide changes to assistive tech -->
+      <p class="visually-hidden" id="heroLiveRegion" aria-live="polite"></p>
+    </section>
+
+    <!-- ============ SERVICES TEASER ============ -->
+    <section class="services" id="services" aria-label="Services overview">
+      <div class="services__inner">
+        <p class="section-eyebrow">// what i do</p>
+        <h2 class="section-title">Two crafts, one workflow</h2>
+        <div class="services__grid">
+          <article class="service-card">
+            <span class="service-card__tag">DEV</span>
+            <h3>Web Development</h3>
+            <p>Responsive sites, WordPress builds, and SQL-backed apps built with clean, maintainable code.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__tag">EDIT</span>
+            <h3>Video Editing</h3>
+            <p>Premiere Pro &amp; After Effects edits — trailers, social content, and motion graphics that hold attention.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__tag">NEXT</span>
+            <h3>AI &amp; Automation</h3>
+            <p>Currently training in backend AI engineering to bring intelligent automation into future builds.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER STRIP ============ -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <div class="contact__inner">
+        <h2 class="section-title">Have a project in mind?</h2>
+        <p>I'm open to remote roles and freelance work — web development, video editing, or both.</p>
+        <a href="mailto:hello@example.com" class="btn btn--primary">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Tayaba. Built with HTML, CSS &amp; vanilla JavaScript.</p>
+      <nav aria-label="Social links">
+        <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="#" aria-label="GitHub profile">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="data/slides-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
