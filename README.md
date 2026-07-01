@@ -1,6 +1,6 @@
 # Hero Slider – Portfolio Home Page
 
-Live demo: [add your link here]
+Live demo:https://tayaba925.github.io/hero-slider-portfolio/
 
 ---
 
